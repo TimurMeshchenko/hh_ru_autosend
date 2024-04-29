@@ -22,7 +22,7 @@ async function handlerCoverLetter(vacancyName) {
 function getCoveringLetter(vacancyName) {
   const coveringLetter = `Здравствуйте!
 
-Меня зовут Тимур, я Python Backend Developer. Меня заинтересовала вакансия: ${vacancyName}.
+Меня зовут Тимур, я Python Backend Developer, ищу удаленную работу. Меня заинтересовала вакансия: ${vacancyName}.
 
 Обладаю 4-летним опытом работы в сфере Python Backend, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL.
 
