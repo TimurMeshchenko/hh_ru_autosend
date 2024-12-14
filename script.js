@@ -5,14 +5,14 @@ function delay(ms) {
 async function handlermessageArea(vacancyName) {
   const coveringLetter = getCoveringLetter(vacancyName);
 
-  await delay(500);
+  await delay(2000);
 
   const button_respond_vacancy = document.querySelector(
     '[data-qa="vacancy-response-letter-toggle"]'
   );
-  button_respond_vacancy.click();
+  button_respond_vacancy?.click();
 
-  await delay(500);
+  await delay(5000);
 
   const inputTypes = [
     window.HTMLInputElement,
@@ -41,7 +41,7 @@ async function handlermessageArea(vacancyName) {
 function getCoveringLetter(vacancyName) {
   const coveringLetter = `Здравствуйте!
 
-Меня зовут Тимур, я Python Developer. Меня заинтересовала вакансия: ${vacancyName}.
+Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия.
 
 Имею 2,5 года опыта работы в сфере Python, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL, ClickHouse.
 
