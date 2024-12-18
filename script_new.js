@@ -1,4 +1,4 @@
-const coveringLetter = `Здравствуйте!
+const coverLetterText = `Здравствуйте!
 
 Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия.
 
@@ -103,7 +103,7 @@ const runTasks = async () => {
       );
 
       if (coverLetter) {
-        triggerInputChange(coverLetter, coverLetterText);
+        triggerInputChange(coverLetter, getCoveringLetter(jobTitle));
 
         withCoverLetter.push({ title: jobTitle, href: jobHref });
       }
@@ -161,5 +161,20 @@ const runTasks = async () => {
   //     log("GO TO NEXT PAGE");
   //   }
 };
+
+function getCoveringLetter(vacancyName) {
+  const coveringLetter = `Здравствуйте!
+
+Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия ${vacancyName}.
+
+Имею 2,5 года опыта работы в сфере Python, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL, ClickHouse.
+
+Также имею коммерческий опыт с Docker, Git, Redis, REST API, CI/CD, Linux, RabbitMQ, Celery, SQLALchemy, Kubernetes, Kafka, JavaScript, asyncio, HTML, CSS3, Nginx, ООП, Pytest, Airflow.
+
+С удовольствием отвечу на ваши вопросы.
+Telegram: @Meshchenko https://t.me/Meshchenko`;
+
+  return coveringLetter;
+}
 
 runTasks();
