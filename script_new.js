@@ -1,14 +1,3 @@
-const coverLetterText = `Здравствуйте!
-
-Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия.
-
-Имею 2,5 года опыта работы в сфере Python, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL, ClickHouse.
-
-Также имею коммерческий опыт с Docker, Git, Redis, REST API, CI/CD, Linux, RabbitMQ, Celery, SQLALchemy, Kubernetes, Kafka, JavaScript, asyncio, HTML, CSS3, Nginx, ООП, Pytest, Airflow.
-
-С удовольствием отвечу на ваши вопросы.
-Telegram: @Meshchenko https://t.me/Meshchenko`;
-
 const errors = [];
 const withCoverLetter = [];
 const alreadyResponded = [];
@@ -45,6 +34,10 @@ const triggerInputChange = (node, value = "") => {
 
     setValue.call(node, value);
     node.dispatchEvent(event);
+
+    document
+      .querySelector(".bloko-modal-footer .bloko-button_kind-primary")
+      ?.click();
   }
 };
 
@@ -108,10 +101,6 @@ const runTasks = async () => {
         withCoverLetter.push({ title: jobTitle, href: jobHref });
       }
 
-      document
-        .querySelector(".bloko-modal-footer .bloko-button_kind-primary")
-        ?.click();
-
       await wait(1111);
 
       const errorText = document.querySelector(
@@ -167,7 +156,7 @@ function getCoveringLetter(vacancyName) {
 
 Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия ${vacancyName}.
 
-Имею 2,5 года опыта работы в сфере Python, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL, ClickHouse.
+Имею более 5,5 лет опыта работы с Python, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL, ClickHouse.
 
 Также имею коммерческий опыт с Docker, Git, Redis, REST API, CI/CD, Linux, RabbitMQ, Celery, SQLALchemy, Kubernetes, Kafka, JavaScript, asyncio, HTML, CSS3, Nginx, ООП, Pytest, Airflow.
 
