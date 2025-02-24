@@ -36,7 +36,7 @@ const triggerInputChange = (node, value = "") => {
     node.dispatchEvent(event);
 
     document
-      .querySelector(".bloko-modal-footer .bloko-button_kind-primary")
+      .querySelector("[data-qa='vacancy-response-submit-popup']")
       ?.click();
   }
 };
@@ -81,11 +81,11 @@ const runTasks = async () => {
 
       // Вы откликаетесь на вакансию в другой стране
       document
-        .querySelector(".bloko-modal-footer .bloko-button_kind-success")
+        .querySelector('[data-qa="relocation-warning-confirm"]')
         ?.click();
 
       const button_respond_vacancy = document.querySelector(
-        '[data-qa="vacancy-response-letter-toggle"]'
+        '[data-qa="secondary-actions"] button'
       );
       button_respond_vacancy?.click();
 
