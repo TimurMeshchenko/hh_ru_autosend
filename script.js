@@ -154,7 +154,7 @@ const runTasks = async () => {
 function getCoveringLetter(vacancyName) {
   const coveringLetter = `Здравствуйте!
 
-Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия ${vacancyName}.
+Меня зовут Тимур, я Python Developer. Меня заинтересовала ваша вакансия.
 
 Имею более 5,5 лет опыта работы с Python, специализируясь на проектировании, разработке, поддержке и оптимизации высоконагруженных веб-приложений на фреймворках Django, FastAPI, Flask. С использованием микросервисной архитектуры и различных баз данных PostgreSQL, MongoDB, MySQL, ClickHouse.
 
